@@ -1,0 +1,18 @@
+#btns{
+    margin-top: 20px;
+}
+#fieldset{
+    margin-top: 40px;
+    color: white;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+}
+
+input{
+    border: none 2px;
+    border-radius: 12px;
+}
+body{
+    background-image: url("bg1.png");
+}

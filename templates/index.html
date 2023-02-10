@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if users %}
+<div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tache</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for users in users %}
+        <tr>
+            <th>
+                <a href="/update/{{users.id}}/">{{ users.nom }}</a>
+            </th>
+            <th>{{ users.created_at.date() }}</th>
+            <th>
+                <a href="/delete/{{users.id}}/" class="btn btn-danger">Supprimer</a>
+            </th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Rien à lister </p>
+{% endif %}
+{% include "inscription.html" %}
+</div>
+{% endblock content %}

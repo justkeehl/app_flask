@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/bootstrap.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/inscription.css')}}">
+<div class="container">
+    <form class="container" id="fieldset" action="" method="post">
+        <div class="row">
+            <label class="col-6 offset-3" for="nom">Nom</label>
+        </div>
+        <div class="row">
+            <input name="nom" class="col-6 offset-3" type="text" placeholder="Enter the name">
+        </div>
+        <div class="row">
+            <label class="col-6 offset-3" for="prenom">Prenom</label>
+        </div>
+        <div class="row">
+            <input name="prenom" class="col-6 offset-3" type="text" placeholder="Enter the name">
+        </div>
+        <div class="row">
+            <label class="col-6 offset-3" for="email">E-mail</label>
+        </div>
+        <div class="row">
+            <input name="email" class="col-6 offset-3" type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="row">
+            <label class="col-6 offset-3" for="password">Mot de passe</label>
+        </div>
+        <div class="row">
+            <input name="password" class="col-6 offset-3" type="password" placeholder="Enter the password">
+        </div>
+         <div class="row">
+            <label class="col-6 offset-3" for="password_conf">Confirmation</label>
+        </div>
+        <div class="row">
+            <input name="password_conf" class="col-6 offset-3" type="password" placeholder="confirm the password">
+        </div>
+        <div class="row" id="btns">
+            <input type="submit" id="valid" class="col-6 rounded btn btn-outline-success" value="Valider">
+            <input type="reset" id="reset" class="col-6 rounded btn btn-outline-danger" value="Annuler">
+        </div>
+    </form>
+</div>

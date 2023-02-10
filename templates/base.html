@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if title %} {{ title }} {% else %} Cours de Flask {% endif %}
+    </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/base.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/bootstrap.css')}}">
+<link rel="stylesheet" href="/static/CSS/bootstrap.css">
+<link rel="stylesheet" href="/static/CSS/base.css">
+</head>
+<body>
+    {% include "navbar.html" %}
+
+
+</body>
+</html>

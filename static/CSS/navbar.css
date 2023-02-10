@@ -1,0 +1,9 @@
+#navbar{
+    font-style: italic;
+    font-weight: bold;
+    background: sandybrown;
+    transition: text-shadow 0.4s;
+}
+#navbar:hover{
+    text-shadow: white 0px 2px 15px;
+}

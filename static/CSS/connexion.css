@@ -1,0 +1,26 @@
+#btn{
+    margin-top: 20px;
+    transition: letter-spacing 0.4s, transform 0.4s, font-weight 0.4s;
+    border-radius: 20px;
+}
+
+#btn:hover{
+    transform: translateY(-12px);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+input{
+    border: none;
+    border-radius: 12px;
+}
+body{
+    background-image: url("bg4.jpg");
+}
+#fieldset{
+    border-radius: 14px;
+    color: white;
+    margin-top: 40px;
+    background: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(20px);
+    padding-bottom: 40px;
+}
